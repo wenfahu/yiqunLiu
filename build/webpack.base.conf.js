@@ -25,8 +25,12 @@ module.exports = {
         loader: 'vue'
       },
       {
+        test:/\.css$/,
+        loader: 'style!css'
+      },
+      {
         test: /\.js$/,
-        loader: 'babel!eslint',
+        loader: 'babel',
         exclude: /node_modules/
       },
       {
@@ -35,20 +39,28 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
-        loader: 'url',
+        loader: 'file',
         query: {
           limit: 10000,
           name: '[name].[ext]?[hash]'
         }
-      }
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9].[0-9].[0-9])?$/, loader: "url-loader?mimetype=application/font-woff"
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/, loader: "file-loader?name=[name].[ext]"
+      },
     ]
   },
   vue: {
     loaders: {
-      js: 'babel!eslint'
+      js: 'babel'
     }
-  },
+  }
+  /*
   eslint: {
     formatter: require('eslint-friendly-formatter')
   }
+  */
 }

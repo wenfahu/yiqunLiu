@@ -7,6 +7,10 @@
   </head>
   <body>
     <app></app>{% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+	<div class="ui center aligned segment">
+		Copyright &copy; 2008-2016 Yiqun Liu  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		Last-updated Jan 26, 2016
+	</div>
     <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>{% } %}
   </body>
 </html>

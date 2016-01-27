@@ -8,6 +8,7 @@
     "test": "karma start build/karma.conf.js --single-run"
   },
   "dependencies": {
+    "readmore-js": "^2.1.0",
     "semantic-ui": "^2.1.8",
     "vue": "^1.0.15"
   },
@@ -19,7 +20,7 @@
     "babel-preset-stage-2": "^6.0.0",
     "babel-runtime": "^5.8.0",
     "connect-history-api-fallback": "^1.1.0",
-    "css-loader": "^0.23.0",
+    "css-loader": "^0.23.1",
     "eslint": "^1.10.3",
     "eslint-friendly-formatter": "^1.2.2",
     "eslint-loader": "^1.2.0",
@@ -39,6 +40,7 @@
     "karma-webpack": "^1.7.0",
     "phantomjs": "^1.9.19",
     "rimraf": "^2.5.0",
+    "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.0.0",
