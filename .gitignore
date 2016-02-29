@@ -3,3 +3,16 @@ node_modules/
 dist/static/
 semantic/
 npm-debug.log
+
+# Created by https://www.gitignore.io/api/vim
+
+### Vim ###
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+
