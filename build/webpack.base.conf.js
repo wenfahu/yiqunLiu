@@ -1,4 +1,5 @@
 var path = require('path')
+var webpack = require('webpack')
 
 module.exports = {
   entry: {
@@ -15,6 +16,12 @@ module.exports = {
       'src': path.resolve(__dirname, '../src')
     }
   },
+  plugins:[
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
+  ],
   resolveLoader: {
     root: path.join(__dirname, 'node_modules'),
   },
