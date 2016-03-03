@@ -20,10 +20,10 @@
 
 <div class="pusher">
 
-  <div class="ui inverted vertical masthead center aligned segment">
+  <div class="ui vertical masthead center aligned segment">
 
     <div class="ui container">
-      <div class="ui large secondary inverted pointing menu">
+      <div class="ui large secondary pointing right floated menu">
         <a class="toc item">
           <i class="sidebar icon"></i>
         </a>
@@ -31,10 +31,6 @@
         <a class="item">Work</a>
         <a class="item">Company</a>
         <a class="item">Careers</a>
-        <div class="right item">
-          <a class="ui inverted button">Log in</a>
-          <a class="ui inverted button">Sign Up</a>
-        </div>
       </div>
     </div>
 
@@ -48,8 +44,6 @@
 
   </div>
   <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <hello></hello>
 	<Research></Research>
 	<Publications></Publications>
 	<Course></Course>
@@ -60,7 +54,6 @@
 </template>
 
 <script>
-import Hello from './components/Hello'
 import Research from './components/Research'
 import Slides from './components/Slides'
 import Patents from './components/Patents'
@@ -101,7 +94,6 @@ $(document)
 
 export default {
   components: {
-    Hello,
 	Research,
 	Slides,
 	Patents,
@@ -112,7 +104,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 body {
   font-family: Helvetica, sans-serif;
 }
@@ -120,6 +112,10 @@ body {
 
 <style scoped>
 
+  .ui.vertical.masthead.segment{
+  	background: url('./assets/cover2.jpg');
+	background-size: cover;
+  }
   .hidden.menu {
     display: none;
   }
